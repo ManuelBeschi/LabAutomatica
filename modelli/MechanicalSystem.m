@@ -69,6 +69,18 @@ classdef MechanicalSystem < handle
             umax=obj.umax;
         end
 
+        function output_names=getOutputName(obj)
+            for idx=1:obj.num_output
+                output_names{idx}=sprintf('output_%d',idx);
+            end
+        end
+
+        function input_names=getInputName(obj)
+            for idx=1:obj.num_input
+                input_names{idx}=sprintf('input_%d',idx);
+            end
+        end
+
     end
 
     methods  (Access = protected)

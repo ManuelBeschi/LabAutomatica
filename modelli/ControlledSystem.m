@@ -48,12 +48,15 @@ classdef ControlledSystem < handle
             obj.model.updateState(control_action,t);
         end
 
-        function [y,u,t]=step(obj,reference)
+        function [y,u,t]=step(obj,reference,u_feedforward)
+            if (nargin<3)
+                u_feedforward=zeros(obj.model.getInputNumber,1);
+            end
             t=obj.time;
             obj.time=obj.time+obj.st;
             y=obj.model.computeOutput;
             assert(~isempty(obj.controller),'Controller is not set');
-            u=obj.controller.computeControlAction(reference,y);
+            u=obj.controller.computeControlAction(reference,y)+u_feedforward;
             obj.model.updateState(u,t);
         end
 

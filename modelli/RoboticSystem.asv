@@ -57,13 +57,13 @@ classdef RoboticSystem < MechanicalSystem
         function output_names=getOutputName(obj)
             for idx=1:obj.njoints
                 output_names{idx}=sprintf('position_%d',idx);
-                output_names{idx+obj.njoints}=sprintf('velocity_%d',idx);
+                output_names{idx}=sprintf('position_%d',idx);
             end
         end
 
         function input_names=getInputName(obj)
             for idx=1:obj.njoints
-                input_names{idx}=sprintf('torque_%d',idx);
+                input_names{idx}=sprintf('input_%d',idx);
             end
         end
     end
