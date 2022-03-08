@@ -11,7 +11,7 @@ codegen fdCodegen -args {q,qd,tau}
 
 time=0;
 mexTime=0;
-for idx=1:100
+for idx=1:1%00
     q=randn(2,1);
     qd=randn(2,1);
     tau=randn(2,1);

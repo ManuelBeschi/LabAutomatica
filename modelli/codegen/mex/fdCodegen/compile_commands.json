@@ -1,0 +1,350 @@
+[
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd_ccd.c\" /Fobuild\\win64\\ccd_ccd.obj",
+    "file": "C:/Program Files/MATLAB/R2021b/toolbox/shared/robotics/externalDependency/libccd/src/ccd_ccd.c",
+    "output": "build/win64/ccd_ccd.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd_mpr.c\" /Fobuild\\win64\\ccd_mpr.obj",
+    "file": "C:/Program Files/MATLAB/R2021b/toolbox/shared/robotics/externalDependency/libccd/src/ccd_mpr.c",
+    "output": "build/win64/ccd_mpr.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd_polytope.c\" /Fobuild\\win64\\ccd_polytope.obj",
+    "file": "C:/Program Files/MATLAB/R2021b/toolbox/shared/robotics/externalDependency/libccd/src/ccd_polytope.c",
+    "output": "build/win64/ccd_polytope.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd_vec3.c\" /Fobuild\\win64\\ccd_vec3.obj",
+    "file": "C:/Program Files/MATLAB/R2021b/toolbox/shared/robotics/externalDependency/libccd/src/ccd_vec3.c",
+    "output": "build/win64/ccd_vec3.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\robotcore\\builtins\\libsrc\\collisioncodegen\\collisioncodegen_CollisionGeometry.cpp\" /Fobuild\\win64\\collisioncodegen_CollisionGeometry.obj",
+    "file": "C:/Program Files/MATLAB/R2021b/toolbox/shared/robotics/robotcore/builtins/libsrc/collisioncodegen/collisioncodegen_CollisionGeometry.cpp",
+    "output": "build/win64/collisioncodegen_CollisionGeometry.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\robotcore\\builtins\\libsrc\\collisioncodegen\\collisioncodegen_api.cpp\" /Fobuild\\win64\\collisioncodegen_api.obj",
+    "file": "C:/Program Files/MATLAB/R2021b/toolbox/shared/robotics/robotcore/builtins/libsrc/collisioncodegen/collisioncodegen_api.cpp",
+    "output": "build/win64/collisioncodegen_api.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\robotcore\\builtins\\libsrc\\collisioncodegen\\collisioncodegen_ccdExtensions.cpp\" /Fobuild\\win64\\collisioncodegen_ccdExtensions.obj",
+    "file": "C:/Program Files/MATLAB/R2021b/toolbox/shared/robotics/robotcore/builtins/libsrc/collisioncodegen/collisioncodegen_ccdExtensions.cpp",
+    "output": "build/win64/collisioncodegen_ccdExtensions.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\robotcore\\builtins\\libsrc\\collisioncodegen\\collisioncodegen_checkCollision.cpp\" /Fobuild\\win64\\collisioncodegen_checkCollision.obj",
+    "file": "C:/Program Files/MATLAB/R2021b/toolbox/shared/robotics/robotcore/builtins/libsrc/collisioncodegen/collisioncodegen_checkCollision.cpp",
+    "output": "build/win64/collisioncodegen_checkCollision.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   fdCodegen_data.c /Fobuild\\win64\\fdCodegen_data.obj",
+    "file": "fdCodegen_data.c",
+    "output": "build/win64/fdCodegen_data.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   rt_nonfinite.c /Fobuild\\win64\\rt_nonfinite.obj",
+    "file": "rt_nonfinite.c",
+    "output": "build/win64/rt_nonfinite.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   fdCodegen_initialize.c /Fobuild\\win64\\fdCodegen_initialize.obj",
+    "file": "fdCodegen_initialize.c",
+    "output": "build/win64/fdCodegen_initialize.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   fdCodegen_terminate.c /Fobuild\\win64\\fdCodegen_terminate.obj",
+    "file": "fdCodegen_terminate.c",
+    "output": "build/win64/fdCodegen_terminate.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   fdCodegen.c /Fobuild\\win64\\fdCodegen.obj",
+    "file": "fdCodegen.c",
+    "output": "build/win64/fdCodegen.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   rigidBodyJoint.c /Fobuild\\win64\\rigidBodyJoint.obj",
+    "file": "rigidBodyJoint.c",
+    "output": "build/win64/rigidBodyJoint.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   CollisionSet.c /Fobuild\\win64\\CollisionSet.obj",
+    "file": "CollisionSet.c",
+    "output": "build/win64/CollisionSet.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   rand.c /Fobuild\\win64\\rand.obj",
+    "file": "rand.c",
+    "output": "build/win64/rand.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   RigidBodyTree.c /Fobuild\\win64\\RigidBodyTree.obj",
+    "file": "RigidBodyTree.c",
+    "output": "build/win64/RigidBodyTree.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   rigidBody.c /Fobuild\\win64\\rigidBody.obj",
+    "file": "rigidBody.c",
+    "output": "build/win64/rigidBody.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   eig.c /Fobuild\\win64\\eig.obj",
+    "file": "eig.c",
+    "output": "build/win64/eig.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   anyNonFinite.c /Fobuild\\win64\\anyNonFinite.obj",
+    "file": "anyNonFinite.c",
+    "output": "build/win64/anyNonFinite.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   schur.c /Fobuild\\win64\\schur.obj",
+    "file": "schur.c",
+    "output": "build/win64/schur.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   xnrm2.c /Fobuild\\win64\\xnrm2.obj",
+    "file": "xnrm2.c",
+    "output": "build/win64/xnrm2.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   warning.c /Fobuild\\win64\\warning.obj",
+    "file": "warning.c",
+    "output": "build/win64/warning.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   xzlartg.c /Fobuild\\win64\\xzlartg.obj",
+    "file": "xzlartg.c",
+    "output": "build/win64/xzlartg.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   xzhgeqz.c /Fobuild\\win64\\xzhgeqz.obj",
+    "file": "xzhgeqz.c",
+    "output": "build/win64/xzhgeqz.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   xzlanhs.c /Fobuild\\win64\\xzlanhs.obj",
+    "file": "xzlanhs.c",
+    "output": "build/win64/xzlanhs.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   relop.c /Fobuild\\win64\\relop.obj",
+    "file": "relop.c",
+    "output": "build/win64/relop.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   xzsvdc.c /Fobuild\\win64\\xzsvdc.obj",
+    "file": "xzsvdc.c",
+    "output": "build/win64/xzsvdc.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   xdotc.c /Fobuild\\win64\\xdotc.obj",
+    "file": "xdotc.c",
+    "output": "build/win64/xdotc.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   any.c /Fobuild\\win64\\any.obj",
+    "file": "any.c",
+    "output": "build/win64/any.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   validatestring.c /Fobuild\\win64\\validatestring.obj",
+    "file": "validatestring.c",
+    "output": "build/win64/validatestring.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   rigidBodyTree1.c /Fobuild\\win64\\rigidBodyTree1.obj",
+    "file": "rigidBodyTree1.c",
+    "output": "build/win64/rigidBodyTree1.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   strcmp.c /Fobuild\\win64\\strcmp.obj",
+    "file": "strcmp.c",
+    "output": "build/win64/strcmp.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   RigidBody1.c /Fobuild\\win64\\RigidBody1.obj",
+    "file": "RigidBody1.c",
+    "output": "build/win64/RigidBody1.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   validateattributes.c /Fobuild\\win64\\validateattributes.obj",
+    "file": "validateattributes.c",
+    "output": "build/win64/validateattributes.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   RigidBodyTreeDynamics.c /Fobuild\\win64\\RigidBodyTreeDynamics.obj",
+    "file": "RigidBodyTreeDynamics.c",
+    "output": "build/win64/RigidBodyTreeDynamics.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   normalizeRows.c /Fobuild\\win64\\normalizeRows.obj",
+    "file": "normalizeRows.c",
+    "output": "build/win64/normalizeRows.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   indexShapeCheck.c /Fobuild\\win64\\indexShapeCheck.obj",
+    "file": "indexShapeCheck.c",
+    "output": "build/win64/indexShapeCheck.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   mtimes.c /Fobuild\\win64\\mtimes.obj",
+    "file": "mtimes.c",
+    "output": "build/win64/mtimes.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   colon.c /Fobuild\\win64\\colon.obj",
+    "file": "colon.c",
+    "output": "build/win64/colon.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   eml_mtimes_helper.c /Fobuild\\win64\\eml_mtimes_helper.obj",
+    "file": "eml_mtimes_helper.c",
+    "output": "build/win64/eml_mtimes_helper.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   handle.c /Fobuild\\win64\\handle.obj",
+    "file": "handle.c",
+    "output": "build/win64/handle.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   interface\\_coder_fdCodegen_api.c /Fobuild\\win64\\_coder_fdCodegen_api.obj",
+    "file": "interface/_coder_fdCodegen_api.c",
+    "output": "build/win64/_coder_fdCodegen_api.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   interface\\_coder_fdCodegen_mex.c /Fobuild\\win64\\_coder_fdCodegen_mex.obj",
+    "file": "interface/_coder_fdCodegen_mex.c",
+    "output": "build/win64/_coder_fdCodegen_mex.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   eml_int_forloop_overflow_check.c /Fobuild\\win64\\eml_int_forloop_overflow_check.obj",
+    "file": "eml_int_forloop_overflow_check.c",
+    "output": "build/win64/eml_int_forloop_overflow_check.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   sumMatrixIncludeNaN.c /Fobuild\\win64\\sumMatrixIncludeNaN.obj",
+    "file": "sumMatrixIncludeNaN.c",
+    "output": "build/win64/sumMatrixIncludeNaN.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   xscal.c /Fobuild\\win64\\xscal.obj",
+    "file": "xscal.c",
+    "output": "build/win64/xscal.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   xzlarf.c /Fobuild\\win64\\xzlarf.obj",
+    "file": "xzlarf.c",
+    "output": "build/win64/xzlarf.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   xhseqr.c /Fobuild\\win64\\xhseqr.obj",
+    "file": "xhseqr.c",
+    "output": "build/win64/xhseqr.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   xzlarfg.c /Fobuild\\win64\\xzlarfg.obj",
+    "file": "xzlarfg.c",
+    "output": "build/win64/xzlarfg.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   xdlanv2.c /Fobuild\\win64\\xdlanv2.obj",
+    "file": "xdlanv2.c",
+    "output": "build/win64/xdlanv2.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   xrot.c /Fobuild\\win64\\xrot.obj",
+    "file": "xrot.c",
+    "output": "build/win64/xrot.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   xzggbal.c /Fobuild\\win64\\xzggbal.obj",
+    "file": "xzggbal.c",
+    "output": "build/win64/xzggbal.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   sqrt.c /Fobuild\\win64\\sqrt.obj",
+    "file": "sqrt.c",
+    "output": "build/win64/sqrt.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   xaxpy.c /Fobuild\\win64\\xaxpy.obj",
+    "file": "xaxpy.c",
+    "output": "build/win64/xaxpy.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   fdCodegen_emxutil.c /Fobuild\\win64\\fdCodegen_emxutil.obj",
+    "file": "fdCodegen_emxutil.c",
+    "output": "build/win64/fdCodegen_emxutil.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   interface\\_coder_fdCodegen_info.c /Fobuild\\win64\\_coder_fdCodegen_info.obj",
+    "file": "interface/_coder_fdCodegen_info.c",
+    "output": "build/win64/_coder_fdCodegen_info.obj"
+  },
+  {
+    "directory": "C:\\projects\\didattica\\LabAutomatica\\modelli\\codegen\\mex\\fdCodegen",
+    "command": "cl /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I \".\" /I \"C:\\projects\\didattica\\LabAutomatica\\modelli\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\\shared_robotics\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\" /I \"C:\\Program Files\\MATLAB\\R2021b\\toolbox\\shared\\robotics\\externalDependency\\libccd\\src\\ccd\" /I \".\\interface\" /I \"C:\\Program Files\\MATLAB\\R2021b\\extern\\include\" /I \".\" -Dccd_EXPORTS -DMODEL=fdCodegen_mex   \"C:\\Program Files\\MATLAB\\R2021b\\extern\\version\\c_mexapi_version.c\" /Fobuild\\win64\\c_mexapi_version.obj",
+    "file": "C:/Program Files/MATLAB/R2021b/extern/version/c_mexapi_version.c",
+    "output": "build/win64/c_mexapi_version.obj"
+  }
+]

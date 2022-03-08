@@ -1,0 +1,99 @@
+# CompilerName=msvc160
+# Mode=optim
+ninja_required_version = 1.3
+
+# Basic folders
+root = .
+builddir = $root\build\win64
+matlabdir = C:\Program Files\MATLAB\R2021b
+startdir = C:\projects\didattica\LabAutomatica\modelli
+
+# Toolchain information
+cc = cl
+cxx = cl
+linker = link
+linkerxx = link
+
+cflags =  /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I "$root" /I "$startdir" /I "$matlabdir\extern\include\shared_robotics" /I "$matlabdir\toolbox\shared\robotics\externalDependency\libccd\src" /I "$matlabdir\toolbox\shared\robotics\externalDependency\libccd\src\ccd" /I "$root\interface" /I "$matlabdir\extern\include" /I "." -Dccd_EXPORTS -DMODEL=fdCodegen_mex  
+
+cxxflags =   /c /Zc:__cplusplus /Zp8 /GR /W3 /EHs /nologo /MD /D_CRT_SECURE_NO_DEPRECATE /D_SCL_SECURE_NO_DEPRECATE /D_SECURE_SCL=0   /DMATLAB_MEX_FILE  /DMATLAB_MEX_FILE /O2 /Oy- /DNDEBUG /fp:strict /source-charset:utf-8 /I "$root" /I "$startdir" /I "$matlabdir\extern\include\shared_robotics" /I "$matlabdir\toolbox\shared\robotics\externalDependency\libccd\src" /I "$matlabdir\toolbox\shared\robotics\externalDependency\libccd\src\ccd" /I "$root\interface" /I "$matlabdir\extern\include" /I "." -Dccd_EXPORTS -DMODEL=fdCodegen_mex  
+
+ldflags =  /nologo /manifest   /DLL /LIBPATH:"$matlabdir\extern\lib\win64\microsoft" libmx.lib libmex.lib libmat.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib  /out:"fdCodegen_mex.mexw64" /LIBPATH:"$matlabdir\extern\lib\win64\microsoft" libmwblas.lib libemlrt.lib libcovrt.lib libut.lib libmwmathutil.lib  /export:mexFunction /export:mexfilerequiredapiversion /export:emlrtMexFcnProperties /export:fdCodegen /export:fdCodegen_initialize /export:fdCodegen_terminate /export:fdCodegen_atexit /export:c_emxEnsureCapacity_unnamed_str /export:emxEnsureCapacity_cell_wrap_21 /export:emxFree_cell_wrap_21 /export:emxInit_cell_wrap_21 /export:emxEnsureCapacity_real_T /export:emxEnsureCapacity_boolean_T /export:emxFree_boolean_T /export:emxInit_boolean_T /export:emxEnsureCapacity_char_T /export:emxFreeStruct_rigidBodyTree /export:e_emxFreeStruct_robotics_manip_ /export:e_emxFreeMatrix_robotics_manip_ /export:emxFreeMatrix_rigidBodyJoint1 /export:c_emxFreeMatrix_robotics_manip_ /export:d_emxFreeMatrix_robotics_manip_ /export:d_emxFreeStruct_robotics_manip_ /export:emxFreeMatrix_rigidBodyJoint2 /export:emxFreeMatrix_rigidBodyJoint /export:emxInitMatrix_rigidBodyJoint2 /export:emxInitMatrix_rigidBodyJoint /export:emxInitStruct_rigidBodyTree /export:c_emxInitStruct_robotics_manip_ /export:emxInitMatrix_rigidBodyJoint1 /export:f_emxInitMatrix_robotics_manip_ /export:d_emxInitStruct_robotics_manip_ /export:e_emxInitMatrix_robotics_manip_ /export:c_emxInitMatrix_robotics_manip_ /export:f_emxFreeMatrix_robotics_manip_ /export:g_emxFreeStruct_robotics_manip_ /export:f_emxFreeStruct_robotics_manip_ /export:c_emxFreeStruct_robotics_manip_ /export:emxFree_unnamed_struct /export:emxFreeStruct_rigidBodyJoint /export:emxFree_char_T /export:emxFree_real_T /export:d_emxInitMatrix_robotics_manip_ /export:e_emxInitStruct_robotics_manip_ /export:f_emxInitStruct_robotics_manip_ /export:emxInitStruct_rigidBodyJoint /export:emxInit_char_T /export:emxInit_real_T /export:g_emxInitStruct_robotics_manip_ /export:emxInit_unnamed_struct
+
+# Build Rules
+rule cc
+    command = $cc $cflags $in /Fo$out
+
+rule cxx
+    command = $cxx $cxxflags $in /Fo$out
+
+rule link
+    command = $linker @$out.rsp $ldflags
+    rspfile = $out.rsp
+    rspfile_content = $in
+
+rule linkxx
+    command = $linkerxx $in $ldflags
+
+# Build
+build $builddir\ccd_ccd.obj : cc $matlabdir\toolbox\shared\robotics\externalDependency\libccd\src\ccd_ccd.c
+build $builddir\ccd_mpr.obj : cc $matlabdir\toolbox\shared\robotics\externalDependency\libccd\src\ccd_mpr.c
+build $builddir\ccd_polytope.obj : cc $matlabdir\toolbox\shared\robotics\externalDependency\libccd\src\ccd_polytope.c
+build $builddir\ccd_vec3.obj : cc $matlabdir\toolbox\shared\robotics\externalDependency\libccd\src\ccd_vec3.c
+build $builddir\collisioncodegen_CollisionGeometry.obj : cxx $matlabdir\toolbox\shared\robotics\robotcore\builtins\libsrc\collisioncodegen\collisioncodegen_CollisionGeometry.cpp
+build $builddir\collisioncodegen_api.obj : cxx $matlabdir\toolbox\shared\robotics\robotcore\builtins\libsrc\collisioncodegen\collisioncodegen_api.cpp
+build $builddir\collisioncodegen_ccdExtensions.obj : cxx $matlabdir\toolbox\shared\robotics\robotcore\builtins\libsrc\collisioncodegen\collisioncodegen_ccdExtensions.cpp
+build $builddir\collisioncodegen_checkCollision.obj : cxx $matlabdir\toolbox\shared\robotics\robotcore\builtins\libsrc\collisioncodegen\collisioncodegen_checkCollision.cpp
+build $builddir\fdCodegen_data.obj : cc $root\fdCodegen_data.c
+build $builddir\rt_nonfinite.obj : cc $root\rt_nonfinite.c
+build $builddir\fdCodegen_initialize.obj : cc $root\fdCodegen_initialize.c
+build $builddir\fdCodegen_terminate.obj : cc $root\fdCodegen_terminate.c
+build $builddir\fdCodegen.obj : cc $root\fdCodegen.c
+build $builddir\rigidBodyJoint.obj : cc $root\rigidBodyJoint.c
+build $builddir\CollisionSet.obj : cc $root\CollisionSet.c
+build $builddir\rand.obj : cc $root\rand.c
+build $builddir\RigidBodyTree.obj : cc $root\RigidBodyTree.c
+build $builddir\rigidBody.obj : cc $root\rigidBody.c
+build $builddir\eig.obj : cc $root\eig.c
+build $builddir\anyNonFinite.obj : cc $root\anyNonFinite.c
+build $builddir\schur.obj : cc $root\schur.c
+build $builddir\xnrm2.obj : cc $root\xnrm2.c
+build $builddir\warning.obj : cc $root\warning.c
+build $builddir\xzlartg.obj : cc $root\xzlartg.c
+build $builddir\xzhgeqz.obj : cc $root\xzhgeqz.c
+build $builddir\xzlanhs.obj : cc $root\xzlanhs.c
+build $builddir\relop.obj : cc $root\relop.c
+build $builddir\xzsvdc.obj : cc $root\xzsvdc.c
+build $builddir\xdotc.obj : cc $root\xdotc.c
+build $builddir\any.obj : cc $root\any.c
+build $builddir\validatestring.obj : cc $root\validatestring.c
+build $builddir\rigidBodyTree1.obj : cc $root\rigidBodyTree1.c
+build $builddir\strcmp.obj : cc $root\strcmp.c
+build $builddir\RigidBody1.obj : cc $root\RigidBody1.c
+build $builddir\validateattributes.obj : cc $root\validateattributes.c
+build $builddir\RigidBodyTreeDynamics.obj : cc $root\RigidBodyTreeDynamics.c
+build $builddir\normalizeRows.obj : cc $root\normalizeRows.c
+build $builddir\indexShapeCheck.obj : cc $root\indexShapeCheck.c
+build $builddir\mtimes.obj : cc $root\mtimes.c
+build $builddir\colon.obj : cc $root\colon.c
+build $builddir\eml_mtimes_helper.obj : cc $root\eml_mtimes_helper.c
+build $builddir\handle.obj : cc $root\handle.c
+build $builddir\_coder_fdCodegen_api.obj : cc $root\interface\_coder_fdCodegen_api.c
+build $builddir\_coder_fdCodegen_mex.obj : cc $root\interface\_coder_fdCodegen_mex.c
+build $builddir\eml_int_forloop_overflow_check.obj : cc $root\eml_int_forloop_overflow_check.c
+build $builddir\sumMatrixIncludeNaN.obj : cc $root\sumMatrixIncludeNaN.c
+build $builddir\xscal.obj : cc $root\xscal.c
+build $builddir\xzlarf.obj : cc $root\xzlarf.c
+build $builddir\xhseqr.obj : cc $root\xhseqr.c
+build $builddir\xzlarfg.obj : cc $root\xzlarfg.c
+build $builddir\xdlanv2.obj : cc $root\xdlanv2.c
+build $builddir\xrot.obj : cc $root\xrot.c
+build $builddir\xzggbal.obj : cc $root\xzggbal.c
+build $builddir\sqrt.obj : cc $root\sqrt.c
+build $builddir\xaxpy.obj : cc $root\xaxpy.c
+build $builddir\fdCodegen_emxutil.obj : cc $root\fdCodegen_emxutil.c
+build $builddir\_coder_fdCodegen_info.obj : cc $root\interface\_coder_fdCodegen_info.c
+build $builddir\c_mexapi_version.obj : cc $matlabdir\extern\version\c_mexapi_version.c
+
+# Link
+build $root\fdCodegen_mex.mexw64 : linkxx $builddir\ccd_ccd.obj $builddir\ccd_mpr.obj $builddir\ccd_polytope.obj $builddir\ccd_vec3.obj $builddir\collisioncodegen_CollisionGeometry.obj $builddir\collisioncodegen_api.obj $builddir\collisioncodegen_ccdExtensions.obj $builddir\collisioncodegen_checkCollision.obj $builddir\fdCodegen_data.obj $builddir\rt_nonfinite.obj $builddir\fdCodegen_initialize.obj $builddir\fdCodegen_terminate.obj $builddir\fdCodegen.obj $builddir\rigidBodyJoint.obj $builddir\CollisionSet.obj $builddir\rand.obj $builddir\RigidBodyTree.obj $builddir\rigidBody.obj $builddir\eig.obj $builddir\anyNonFinite.obj $builddir\schur.obj $builddir\xnrm2.obj $builddir\warning.obj $builddir\xzlartg.obj $builddir\xzhgeqz.obj $builddir\xzlanhs.obj $builddir\relop.obj $builddir\xzsvdc.obj $builddir\xdotc.obj $builddir\any.obj $builddir\validatestring.obj $builddir\rigidBodyTree1.obj $builddir\strcmp.obj $builddir\RigidBody1.obj $builddir\validateattributes.obj $builddir\RigidBodyTreeDynamics.obj $builddir\normalizeRows.obj $builddir\indexShapeCheck.obj $builddir\mtimes.obj $builddir\colon.obj $builddir\eml_mtimes_helper.obj $builddir\handle.obj $builddir\_coder_fdCodegen_api.obj $builddir\_coder_fdCodegen_mex.obj $builddir\eml_int_forloop_overflow_check.obj $builddir\sumMatrixIncludeNaN.obj $builddir\xscal.obj $builddir\xzlarf.obj $builddir\xhseqr.obj $builddir\xzlarfg.obj $builddir\xdlanv2.obj $builddir\xrot.obj $builddir\xzggbal.obj $builddir\sqrt.obj $builddir\xaxpy.obj $builddir\fdCodegen_emxutil.obj $builddir\_coder_fdCodegen_info.obj $builddir\c_mexapi_version.obj 
