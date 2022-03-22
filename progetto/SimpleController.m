@@ -1,7 +1,7 @@
 classdef SimpleController < BaseController 
     properties  (Access = protected)
-        PIctrl1 % PI giunto 1
-        PIctrl2 % PI giunto 2
+        PIctrl1 % PI giunto 1, ingresso errore di posizione, uscita coppia
+        PIctrl2 % PI giunto 2, ingresso errore di posizione, uscita coppia
     end
     methods
         function obj=SimpleController(st,Kp1,Ki1,Kp2,Ki2)

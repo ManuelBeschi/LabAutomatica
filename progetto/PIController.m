@@ -13,9 +13,11 @@ classdef PIController < BaseController
             obj.Ki=Ki;
             obj.Kaw=0.1*Ki; % guadagno antiwindup da tarare
         end
+        
         function initialize(obj)
             obj.xi=0;
         end
+
         function u=computeControlAction(obj,reference,y)
             e=reference-y;
             

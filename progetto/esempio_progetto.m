@@ -5,7 +5,7 @@ addpath(['..',filesep,'modelli'])
 
 % creo sistema
 [system,rigid_robot]=getRoboticSystem('Alfa');
-system.setForwardDynamics(@fdCodegen_ubuntu);
+system.setForwardDynamics(@fdCodegen_win);
 
 % creo sistema controllato
 st=system.getSamplingPeriod;
@@ -38,3 +38,5 @@ cs.setController(ctrl);
 % grafico i risultati
 fprintf('lo score è %f\n',score);
 cs.showResults(results)
+
+%cs.showResult(results(1))
