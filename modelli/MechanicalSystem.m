@@ -92,7 +92,7 @@ classdef MechanicalSystem < handle
 
         % ouput=g(x,u)
         function y=outputFunction(obj)
-            y=obj.x+obj.sigma_y*randn(length(obj.sigma_y),1);
+            y=obj.x+obj.sigma_y.*randn(length(obj.sigma_y),1);
         end
 
         % ODE solver (using RK4 with integration step = 0.1 st)

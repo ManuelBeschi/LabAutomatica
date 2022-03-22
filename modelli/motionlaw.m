@@ -1,4 +1,7 @@
-function [t,q,qd,qdd]=motionlaw(waypoints,max_vel,max_acc,dt)
+function [t,q,qd,qdd]=motionlaw(waypoints,max_vel,max_acc,dt,rest_time)
+if nargin<5
+    rest_time=0;
+end
 nax=size(waypoints,1);
 
 Ttot=0;
@@ -20,9 +23,9 @@ for iw=1:size(waypoints,2)-1
     end
     Ttot=Ttot+Tseg(iw);
 end
-
+Ttot=Ttot+rest_time;
 t=(0:dt:Ttot);
-q=zeros(nax,length(t));
+q=repmat(waypoints(:,1),1,length(t));%zeros(nax,length(t));
 qd=zeros(nax,length(t));
 qdd=zeros(nax,length(t));
 
