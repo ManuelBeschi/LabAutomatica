@@ -30,7 +30,7 @@ end
 st=system.getSamplingPeriod;
 
 % definisco il sistema di controllo
-cs=ControlledSystem(system);
+cs=ControlledSystemScara(system,'Alfa');
 
 % simulo un secondo
 t=(0:st:1)';
