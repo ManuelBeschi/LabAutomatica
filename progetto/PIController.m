@@ -21,7 +21,16 @@ classdef PIController < BaseController
         function u=computeControlAction(obj,reference,y)
             e=reference-y;
             
-            u=obj.xi+obj.Kp*e;
+            u_no_filt=obj.xi+obj.Kp*e;
+            
+            % 1/(Tfiltro*s+1) -> a=exp(-Tc/Tfiltro) circa= 1-Tc/Tfiltro, b=1-a
+            % y(k)=a*y(k-1)+b*u(k)   
+            % se u=1 all'infinito
+            % y=1
+            % 1=a*1+b*1 -> b=1-a
+
+            obj.u_filtrata= obj.a*obj.u_filtrata+(1-obj.a)*u_no_filt;
+            u=obj.u_filtrata;
             if (u>obj.umax)
                 usat=obj.umax;
             elseif (u<-obj.umax)

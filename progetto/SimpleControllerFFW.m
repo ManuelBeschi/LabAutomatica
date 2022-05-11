@@ -1,4 +1,7 @@
-classdef SimpleController < BaseController 
+classdef SimpleControllerFFW < BaseController
+
+    % INCOMPLETO
+
     properties  (Access = protected)
         PIctrl1 % PI giunto 1, ingresso errore di posizione, uscita coppia
         PIctrl2 % PI giunto 2, ingresso errore di posizione, uscita coppia
