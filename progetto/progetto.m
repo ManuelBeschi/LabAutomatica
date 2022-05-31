@@ -13,7 +13,7 @@ nome_gruppo='Bravo';
 
 % uso la funzione compilata per il calcolo della dinamica (arriverà anche
 % per mac)
-system.setForwardDynamics(@fdCodegen_win);
+system.setForwardDynamics(@fdCodegen_ubuntu);
 %%
 n_output=length(system.getOutputName);
 for io=1:n_output
