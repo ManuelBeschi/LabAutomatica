@@ -10,12 +10,15 @@ classdef ControlledSystem < handle
         settling_time_baseline=0.8;
         CE_baseline=0.72;
         OV_baseline=2;
+
+        timer
     end
     methods  (Access = public)
         function obj=ControlledSystem(model)
             obj.model=model;
             obj.controller=[];
             obj.time=0;
+            obj.timer=tic;
             obj.st=model.getSamplingPeriod;
         end
 
@@ -38,17 +41,24 @@ classdef ControlledSystem < handle
                 obj.controller.inizialize;
             end
             obj.time=0;
+            obj.timer=tic;
         end
 
         function [y,t]=openloop(obj,control_action)
+            
+            
             obj.model.setScenario(1);
             t=obj.time;
             obj.time=obj.time+obj.st;
             y=obj.model.computeOutput;
             obj.model.updateState(control_action,t);
+
+
+
         end
 
         function [y,u,t]=step(obj,reference,u_feedforward)
+            
             if (nargin<3)
                 u_feedforward=zeros(obj.model.getInputNumber,1);
             end
@@ -58,6 +68,10 @@ classdef ControlledSystem < handle
             assert(~isempty(obj.controller),'Controller is not set');
             u=obj.controller.computeControlAction(reference,y)+u_feedforward;
             obj.model.updateState(u,t);
+            
+            dtime=obj.time-toc(obj.timer);
+            pause(dtime)
+            
         end
 
         function st=getSamplingPeriod(obj)
@@ -77,6 +91,8 @@ classdef ControlledSystem < handle
             obj.initialize
             obj.model.setScenario(scenario);
 
+            
+            
             [t,reference]=generateTask(obj,scenario);
             y=zeros(length(t),obj.model.getOutputNumber);
             u=zeros(length(t),obj.model.getInputNumber);
@@ -88,6 +104,8 @@ classdef ControlledSystem < handle
             result.y=y;
             result.u=u;
             result.reference=reference;
+
+            
         end
 
         function [t,reference]=generateTask(obj,scenario)

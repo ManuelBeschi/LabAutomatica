@@ -1,0 +1,24 @@
+ 
+Matrix_M =
+ 
+[Izz1 + Izz2 + a1^2*m2 + ac1^2*m1 + ac2^2*m2 + a1^2*mp + a2^2*mp + 2*a1*ac2*m2*cos(q2) + 2*a1*a2*mp*cos(q2), mp*a2^2 + a1*mp*cos(q2)*a2 + m2*ac2^2 + a1*m2*cos(q2)*ac2 + Izz2]
+[                                          mp*a2^2 + a1*mp*cos(q2)*a2 + m2*ac2^2 + a1*m2*cos(q2)*ac2 + Izz2,                                        mp*a2^2 + m2*ac2^2 + Izz2]
+ 
+ 
+Vector_g =
+ 
+g*m2*(ac2*cos(q1 + q2) + a1*cos(q1)) + g*mp*(a2*cos(q1 + q2) + a1*cos(q1)) + ac1*g*m1*cos(q1)
+                                                              g*cos(q1 + q2)*(ac2*m2 + a2*mp)
+ 
+ 
+Vector_c =
+ 
+-a1*dq2*sin(q2)*(2*dq1 + dq2)*(ac2*m2 + a2*mp)
+             a1*dq1^2*sin(q2)*(ac2*m2 + a2*mp)
+ 
+ 
+Matrix_C =
+ 
+[           -2*a1*dq2*sin(q2)*(ac2*m2 + a2*mp),    -a1*dq2*sin(q2)*(ac2*m2 + a2*mp)]
+[(a1*sin(q2)*(ac2*m2 + a2*mp)*(2*dq1 - dq2))/2, (a1*dq1*sin(q2)*(ac2*m2 + a2*mp))/2]
+ 
