@@ -3,7 +3,7 @@ clc;
 close all;
 %addpath(['..',filesep,'modelli']) % aggiungi cartella path
 
-nome_gruppo='Delta';
+nome_gruppo='X-ray';
 
 % credo il sistema da controllare
 % system è lo scara da controllare.
@@ -29,10 +29,11 @@ portante=ampiezza_portante*sin(omega_portante*t);
 exciting_signal=zeros(length(t),2);
 reference=zeros(length(t),system.getOutputNumber);
 
-w0=20;
-w1=600;
-max_applitude=110;
-n_harmonics=30;
+im=2;
+w0=30;
+w1=300;
+max_applitude=70;
+n_harmonics=60;
 omega=logspace(log10(w0),log10(w1),n_harmonics)';
 omega=round(omega/omega_portante)*omega_portante; % arrotondo per avere le omega multiple della portante
 omega=unique(omega); %scarto eventuali doppioni
@@ -46,7 +47,7 @@ for idx=1:length(omega)
 end
 multisine_signal=multisine_signal/max(multisine_signal)*max_applitude;
 
-exciting_signal(:,1)=portante+ multisine_signal;
+exciting_signal(:,im)=portante+ multisine_signal;
 
 
 cs.initialize
@@ -58,15 +59,17 @@ end
 
 %%
 
-process_output_coef=fourierCoefficients(t,process_output(:,3),omega_portante,omega);
-control_action_coef=fourierCoefficients(t,control_action(:,1),omega_portante,omega);
-
+process_output_coef=fourierCoefficients(t,process_output(:,2+im),omega_portante,omega);
+control_action_coef=fourierCoefficients(t,control_action(:,im),omega_portante,omega);
+%%
 figure(1)
 subplot(211)
-plot(t,process_output(:,3))
+plot(t,process_output(:,im+2))
 subplot(212)
-plot(t,exciting_signal(:,1))
-
+plot(t,exciting_signal(:,im))
+hold on
+plot(t,control_action(:,im))
+%%
 freq_resp=idfrd(process_output_coef./control_action_coef,omega,st); % Y(i*omega)/U(i*omega)
 bode_opts = bodeoptions('cstprefs');
 bode_opts.PhaseWrapping = 'on';
@@ -79,11 +82,11 @@ hold on
 %%
 
 peso=ones(length(freq_resp.Frequency),1);
-wpeso0=w0;
-wpeso1=w1;
+wpeso0=40;
+wpeso1=200;
 peso(freq_resp.Frequency<wpeso0)=1e-5;
 peso(freq_resp.Frequency>wpeso1)=1e-5;
- 
+    
 opts=ssestOptions('WeightingFilter',peso,'EnforceStability',1);
 md = ssest(freq_resp,3,'Ts',st,opts);
 

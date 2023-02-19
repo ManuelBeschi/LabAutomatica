@@ -4,6 +4,8 @@ classdef PIController < BaseController
         Kp
         Ki
         Kaw;
+        a
+        u_filtrata
     end
     methods
         function obj=PIController(st,Kp,Ki)
@@ -11,6 +13,8 @@ classdef PIController < BaseController
             obj.xi=0;
             obj.Kp=Kp;
             obj.Ki=Ki;
+            obj.a=exp(-st*200);
+            obj.u_filtrata=0;
             obj.Kaw=0.1*Ki; % guadagno antiwindup da tarare
         end
         
@@ -18,10 +22,10 @@ classdef PIController < BaseController
             obj.xi=0;
         end
 
-        function u=computeControlAction(obj,reference,y)
+        function u=computeControlAction(obj,reference,y,uff)
             e=reference-y;
             
-            u_no_filt=obj.xi+obj.Kp*e;
+            u_no_filt=obj.xi+obj.Kp*e+uff;
             
             % 1/(Tfiltro*s+1) -> a=exp(-Tc/Tfiltro) circa= 1-Tc/Tfiltro, b=1-a
             % y(k)=a*y(k-1)+b*u(k)   
