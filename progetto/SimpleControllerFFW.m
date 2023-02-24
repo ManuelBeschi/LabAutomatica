@@ -1,4 +1,4 @@
-classdef SimpleControllerFFW < BaseController
+    classdef SimpleControllerFFW < BaseController
 
     % INCOMPLETO
 
@@ -8,7 +8,7 @@ classdef SimpleControllerFFW < BaseController
         model
     end
     methods
-        function obj=SimpleController(st,Kp1,Ki1,Kp2,Ki2,rigid_robot)
+        function obj=SimpleControllerFFW(st,Kp1,Ki1,Kp2,Ki2,rigid_robot)
             obj@BaseController(st);
             obj.PIctrl1=PIController(st,Kp1,Ki1);
             obj.PIctrl2=PIController(st,Kp2,Ki2);
@@ -44,11 +44,11 @@ classdef SimpleControllerFFW < BaseController
             sp_vel_jnt1=reference(3);
             sp_vel_jnt2=reference(4);
             
-            sp_acc_jnt1=reference(5);
-            sp_acc_jnt2=reference(6);
+            sp_acc_jnt1=0;%reference(5);
+            sp_acc_jnt2=0;%reference(6);
             
 
-            tau_ffw=obj.model.inverseDynamics([sp_pos_jnt1;sp_pos_jnt2],...
+            tau_ffw=0*obj.model.inverseDynamics([sp_pos_jnt1;sp_pos_jnt2],...
                 [sp_vel_jnt1;sp_vel_jnt2],...
                 [sp_acc_jnt1;sp_acc_jnt2]);
 

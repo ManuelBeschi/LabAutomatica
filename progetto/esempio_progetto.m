@@ -1,11 +1,11 @@
 clear all;
 clc;
 close all;
-addpath(['..',filesep,'modelli'])
+%addpath(['..',filesep,'modelli'])
 
 % creo sistema
 [system,rigid_robot]=getRoboticSystem('Alfa');
-system.setForwardDynamics(@fdCodegen_win);
+system.setForwardDynamics(@fdCodegen_ubuntu);
 
 % creo sistema controllato
 st=system.getSamplingPeriod;
@@ -25,7 +25,7 @@ Ki_jnt1=5;
 Kp_jnt2=5000;
 Ki_jnt2=5;
 
-ctrl=SimpleController(st,Kp_jnt1,Ki_jnt1,Kp_jnt2,Ki_jnt2);
+ctrl=SimpleController(st,Kp_jnt1,Ki_jnt1,Kp_jnt2,Ki_jnt2,rigid_robot);
 
 % setto il controllore
 cs.setController(ctrl);
