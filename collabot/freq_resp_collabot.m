@@ -19,15 +19,16 @@ grid on
 %%
 peso=ones(length(joint3_freq_resp_ident.Frequency),1);
 wpeso0=5;
-wpeso1=50;
+wpeso1=300;
 peso(joint3_freq_resp_ident.Frequency<wpeso0)=1e-5;
 peso(joint3_freq_resp_ident.Frequency>wpeso1)=1e-5;
 
-Jm=0.1;
-Jl=2;
-k=2000;
-c=10;
-cm=0.2;
+Jm=0.1; % motor inertia 
+Jl=2; % link inertia
+k=2000; % spring stiffness
+c=10;  % spring damping
+cm=0.2; % motor viscuous friction
+
 parameters={
     'Jm',Jm;
     'Jl',Jl;
