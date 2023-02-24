@@ -10,7 +10,7 @@ classdef BaseController < handle
         function obj=inizialize(obj)
         end
 
-        function obj=starting(obj,reference,y)
+        function obj=starting(obj,reference,y,u)
         end
 
         function obj=stopping(obj,reference,y)
