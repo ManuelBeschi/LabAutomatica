@@ -12,7 +12,8 @@ classdef MechanicalSystem < handle
         num_input=1; % number of system inputs
         scenario=1;
 
-
+        output_names;
+        input_names;
     end
 
     methods  (Access = public)
@@ -26,15 +27,22 @@ classdef MechanicalSystem < handle
             obj.order=2;
             obj.num_input=1;
             obj.num_output=1;
+
+            for idx=1:obj.num_output
+                obj.output_names{idx}=sprintf('output_%d',idx);
+            end
+            for idx=1:obj.num_input
+                obj.input_names{idx}=sprintf('input_%d',idx);
+            end
         end
 
         % (re)initialize the system to initial conditions
-        function initialize(obj)
+        function obj=initialize(obj)
             obj.x=obj.x0;
             obj.t=0;
         end
 
-        function setScenario(obj,scenario)
+        function obj=setScenario(obj,scenario)
             obj.scenario=scenario;
         end
 
@@ -44,7 +52,7 @@ classdef MechanicalSystem < handle
         end
 
         % solve derivative(x)=f(x,u) during sampling period
-        function updateState(obj,u,t)
+        function obj=updateState(obj,u,t)
             usat=obj.saturationControlAction(u);
             obj.odeSolver(usat,obj.st,t);
         end
@@ -70,14 +78,23 @@ classdef MechanicalSystem < handle
         end
 
         function output_names=getOutputName(obj)
-            for idx=1:obj.num_output
-                output_names{idx}=sprintf('output_%d',idx);
-            end
+             output_names=obj.output_names;
         end
 
         function input_names=getInputName(obj)
-            for idx=1:obj.num_input
-                input_names{idx}=sprintf('input_%d',idx);
+            input_names=obj.input_names;
+        end
+
+        % show system
+        function obj=show(obj)
+            fprintf('This system has %d outputs:\n',obj.num_output)
+            for io=1:obj.num_output
+                fprintf('- %s\n',obj.output_names{io})
+            end
+
+            fprintf('This system has %d inputs:\n',obj.num_input)
+            for ii=1:obj.num_input
+                fprintf('- %s, with maximum limit = %f\n',obj.input_names{ii},obj.umax(ii))
             end
         end
 
@@ -95,19 +112,14 @@ classdef MechanicalSystem < handle
             y=obj.x+obj.sigma_y.*randn(length(obj.sigma_y),1);
         end
 
-        % ODE solver (using RK4 with integration step = 0.1 st)
+        % ODE solver (using RK4)
         function odeSolver(obj,u,st,t)
-            n=1;
-            dt=st/n;
             % Runge Kutta 4
-            for idx=1:n
-                k_1 = obj.stateFunction(obj.x,u,t);
-                k_2 = obj.stateFunction(obj.x+0.5*dt*k_1,u,t);
-                k_3 = obj.stateFunction(obj.x+0.5*dt*k_2,u,t);
-                k_4 = obj.stateFunction(obj.x+k_3*dt,u,t);
-                obj.x=obj.x+(1/6)*(k_1+2*k_2+2*k_3+k_4)*dt;
-            end
-
+            k_1 = obj.stateFunction(obj.x,u,t);
+            k_2 = obj.stateFunction(obj.x+0.5*st*k_1,u,t);
+            k_3 = obj.stateFunction(obj.x+0.5*st*k_2,u,t);
+            k_4 = obj.stateFunction(obj.x+k_3*st,u,t);
+            obj.x=obj.x+(1/6)*(k_1+2*k_2+2*k_3+k_4)*st;
         end
 
         % saturate control action

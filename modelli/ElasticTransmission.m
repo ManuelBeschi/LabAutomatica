@@ -1,27 +1,30 @@
 classdef ElasticTransmission < MechanicalSystem
+    % implement an elastic transmission sistema
     properties  (Access = protected)
         A
         B
         C
         static_friction
     end
-    
+
     methods  (Access = public)
         function obj=ElasticTransmission(st)
             obj@MechanicalSystem(st);
-            obj.st=st;
+            obj.input_names={'motor torque'};
+            obj.output_names={'motor position','motor velocity'};
+       
             obj.x=zeros(4,1);
             obj.x0=zeros(4,1);
-            
+
             Jm=2e-2;
             Jc=4e-2;
-            
+
             k=1000;
             h=.2;
             hm=.01;
-            
+
             obj.static_friction=0.3;
-            
+
             obj.A=[0 0 1 0;
                 0 0 0 1;
                 -k/Jm k/Jm -h/Jm-hm/Jm h/Jm;
@@ -32,15 +35,14 @@ classdef ElasticTransmission < MechanicalSystem
                 0];
             obj.C=[1 0 0 0;
                 0 0 1 0];
-            
+
             obj.order=size(obj.A,2);
             obj.num_input=size(obj.B,2);
             obj.num_output=size(obj.C,1);
             obj.sigma_y=[1e-6;1e-3];
         end
-        
     end
-    
+
     methods  (Access = protected)
         function Dx=stateFunction(obj,x,u,t)
             Dx=obj.A*x+obj.B*(u-obj.static_friction*tanh(obj.x(3)*30));
@@ -48,5 +50,6 @@ classdef ElasticTransmission < MechanicalSystem
         function y=outputFunction(obj)
             y=obj.C*obj.x+obj.sigma_y.*randn(length(obj.sigma_y),1);
         end
+
     end
 end

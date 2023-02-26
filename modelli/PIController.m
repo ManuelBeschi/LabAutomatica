@@ -1,4 +1,7 @@
 classdef PIController < BaseController 
+    % Implementazione di PI
+    % u=Kp*e+xi
+    % xi=xi+Ki*e*st
     properties  (Access = protected)
         xi
         Kp
@@ -6,6 +9,7 @@ classdef PIController < BaseController
     end
     methods
         function obj=PIController(st,Kp,Ki)
+            % verifico correttezza parametri
             assert(isscalar(Kp));
             assert(Kp>=0);
             assert(isscalar(Ki));
@@ -14,11 +18,10 @@ classdef PIController < BaseController
             assert(st>0);
             
             obj@BaseController(st);
+
             obj.xi=0;
             obj.Kp=Kp;
             obj.Ki=Ki;
-
-
         end
         
         function obj=initialize(obj)
@@ -26,16 +29,21 @@ classdef PIController < BaseController
         end
 
         function obj=starting(obj,reference,y,u)
+            % verifico correttezza degli ingressi.
+            % questo controllore richiede che reference,y e u siano scalari
             assert(isscalar(reference));
             assert(isscalar(y));
             assert(isscalar(u));
             
+            % inizializzo l'azione integrale
             % u=xi+Kp*e -> xi=u-Kp*e
             e=reference-y;
             obj.xi=u-obj.Kp*e;
         end
 
         function u=computeControlAction(obj,reference,y)
+            % verifico correttezza degli ingressi.
+            % questo controllore richiede che reference,y e u siano scalari
             assert(isscalar(reference));
             assert(isscalar(y));
             
@@ -45,18 +53,17 @@ classdef PIController < BaseController
 
             if (u>obj.umax)
                 u=obj.umax;
-                if (e<0)
+                if (e<0) % integrazione condizionata
                     obj.xi=obj.xi+obj.Ki*obj.st*e;
                 end
             elseif (u<-obj.umax)
                 u=-obj.umax;
-                if (e>0)
+                if (e>0) % integrazione condizionata
                     obj.xi=obj.xi+obj.Ki*obj.st*e;
                 end
             else
                 obj.xi=obj.xi+obj.Ki*obj.st*e;
             end
-
         end
     end
 end
