@@ -1,0 +1,14 @@
+clear all;close all;clc
+load modello_greybox.mat
+%%
+torque_to_link=[0 1]*modello_grey;
+
+bode(modello_grey)
+
+wc=30;
+
+Ti=1/(wc*10);
+Td=1/wc;
+s=tf('s')
+C=1+Ti/s+Td*s;
+

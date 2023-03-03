@@ -1,5 +1,13 @@
 clear all;clc;close all
 
+% Questo codice MATLAB esegue un test su un controllore a retroazione di stato basato su un controllore proporzionale-integrale (PI) per un sistema dinamico discreto.
+%
+% In particolare, il test genera casualmente un valore per il guadagno proporzionale (Kp), il guadagno integrale (Ki) e la saturazione massima dell'ingresso (umax) del controllore PI, quindi genera un sistema dinamico casuale di ordine arbitrario e ne calcola la retroazione di stato discreta.
+%
+% Il test esegue quindi la simulazione del sistema in anello chiuso utilizzando sia la retroazione di stato calcolata tramite MATLAB che quella implementata manualmente utilizzando il controllore PI. La simulazione viene eseguita utilizzando moto browniano come ingresso di riferimento, quindi viene confrontato l'output del processo e l'azione di controllo tra le due simulazioni, verificando che siano uguali fino alla saturazione.
+%
+% Il test viene quindi ripetuto 100 volte con diversi valori casuali per il controllore PI e il sistema dinamico.
+
 for itest=1:100
     st=1e-3;
     Kp=5*rand; % setto dei valori random
@@ -15,7 +23,7 @@ for itest=1:100
 
     ctrl_continuo=Kp+Ki/s;
     ctrl_discreto=c2d(ctrl_continuo,st);
-    
+
     P_continuo=rss(4); % genero sistema random
 
     % considero solo sistemi strettamente proprio
@@ -28,7 +36,7 @@ for itest=1:100
         P_continuo=P_continuo/s;
     end
 
-    
+
     P_discreto=c2d(P_continuo,st);
     [A,B,C,D]=ssdata(P_discreto);
 
@@ -39,6 +47,16 @@ for itest=1:100
     U_over_R_continuo=feedback(ctrl_continuo,P_continuo);
 
     time=(0:st:30)';
+
+% DA ChatGPT:    Il codice crea una sequenza di riferimento per un controllo a ciclo chiuso (closed-loop control) utilizzando una funzione di integrazione numerica.
+% 
+% In particolare, la funzione cumtrapz integra numericamente una sequenza di numeri casuali (generati da randn(length(time),1)), restituendo una sequenza di numeri che rappresentano la posizione (o lo stato) di un sistema che sta seguendo il percorso tracciato dalla sequenza di numeri casuali.
+% 
+% In altre parole, la sequenza di riferimento reference rappresenta un percorso casuale che il sistema deve seguire, e la funzione di integrazione numerica viene utilizzata per generare una sequenza di posizioni (o stati) corrispondenti a tale percorso. Tale sequenza verrà poi utilizzata per valutare le prestazioni del controllore a ciclo chiuso che viene testato nel resto del codice.
+% 
+% 
+% 
+
     reference=cumtrapz(time,randn(length(time),1));
 
     y_close_loop_matlab_discreto=lsim(Y_over_R_discreto,reference,time);

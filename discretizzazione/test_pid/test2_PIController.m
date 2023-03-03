@@ -1,6 +1,14 @@
 clear all;clc;close all
 % COMPARE WITH TRANSFER FUNCTION - OPEN LOOP
-
+% Questo script Matlab testa la classe PIController confrontando la sua risposta in loop aperto con quella ottenuta usando la funzione di trasferimento del controller continuo convertita in discret-time tramite la funzione c2d().
+% 
+% Il test viene ripetuto 100 volte, generando valori casuali per Kp, Ki e umax. Viene verificato che l'azione di controllo calcolata sia entro i limiti di saturazione imposti dal metodo setUMax().
+% 
+% In particolare, viene testata la funzione computeControlAction() sia per verificare che l'azione di controllo calcolata sia limitata nei limiti imposti, sia per confrontare l'azione di controllo calcolata dalla classe PIController con quella calcolata tramite la funzione di trasferimento del controller continuo convertito in discreto.
+% 
+% Il confronto viene fatto in termini di traiettorie dell'azione di controllo e della differenza tra le due traiettorie.
+% 
+% Viene anche verificato che l'azione di controllo calcolata dalla classe PIController e quella calcolata tramite la funzione di trasferimento del controller continuo siano uguali fino al raggiungimento della saturazione impostata.
 
 for itest=1:100
     st=1e-3;

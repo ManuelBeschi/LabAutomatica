@@ -1,0 +1,47 @@
+function [A,B,C,D] = DOF2_sea_model(Jm1,Jl1,k1,c1,cm1,Jm2,Jl2,k2,c2,cm2,Ts)
+% ODE function for computing state-space matrices as functions of parameters
+%
+% Jm motor inertia 
+% Jl link inertia
+% k spring stiffness
+% c spring damping
+% cm motor viscuous friction
+%
+% x=[motor_pos, link_pos, motor_vel, link_vel]
+%
+% u=motor_eff
+%
+% Jm*Derivative(motor_vel) = u - cm*motor_vel -k*(motor_pos-link_pos) - c*(motor_vel-link_vel)
+%
+% Jl*Derivative(link_vel)  = k*(motor_pos-link_pos) + c*(motor_vel-link_vel)
+
+M=[Jm1 0 0 0
+   0  Jl1+Jm2 0 0
+   ]
+A=[0 0 1 0 0 0 0 0;
+   0 0 0 1 0 0 0 0;
+   [-k1 k1 -cm1-c1 c1]/Jm1 0 0 0 0;
+   [k1 -k1 c1 -c1]/Jl1    0 0 0 0;
+   0 0 0 0 0 0 1 0;
+   0 0 0 0 0 0 0 1;
+   0 0 0 0 [-k2 k2 -cm2-c2 c2]/Jm2;
+   0 0 0 0 [k2 -k2 c2 -c2]/Jl2    ;
+    ];
+
+%  tau1   tau2  
+B=[0      0;       % motor pos 1
+   0      0;       % link pos 1
+   1/Jm1  0;       % motor vel 1
+   0      -1/Jl1;  % link vel 1
+   0      0;       % motor pos 2
+   0      0;       % link pos 2
+   0      1/Jm2;   % motor vel 3
+   0      0];      % link vel 4
+C=[1 0 0 0 0 0 0 0;
+   0 1 0 0 0 0 0 0;
+   0 0 0 0 1 0 0 0;
+   0 0 0 0 0 1 0 0];
+D=[0 0;
+   0 0;
+   0 0;
+   0 0];

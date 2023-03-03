@@ -3,7 +3,7 @@ classdef PIController < BaseController
     % u=Kp*e+xi
     % xi=xi+Ki*e*st
     properties  (Access = protected)
-        xi
+        xi % integrale(Ki*e*dt)
         Kp
         Ki
     end

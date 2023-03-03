@@ -1,0 +1,32 @@
+clear all;close all;clc
+load modello_greybox.mat
+%%
+full_state=ss(modello_grey.A, ...
+    modello_grey.B, ...
+    eye(4), ...
+    zeros(4,1));
+Ts=1e-3;
+Pd=c2d(full_state,Ts);
+
+Ad=Pd.A;
+Bd=Pd.B;
+Cd=Pd.C;
+Dd=Pd.D;
+
+n=order(Pd); % ordine del sistema
+no=size(Cd,1); % numero di uscite
+ni=size(Bd,2); % numero di ingressi
+
+Ahat_d=[Ad zeros(n,ni);-Cd(2,:)*Ts 1];
+Bhat_d=[Bd;zeros(ni,1)];
+
+lambda=[-10,-11,-12,-13,-14];   % polo di sistema continuo % DA TARARE!!!
+aval_controllore=exp(Ts*lambda); 
+Khat=place(Ahat_d,Bhat_d,aval_controllore); % calcola Khat per avere gli autovalori aval_controllore
+K=Khat(:,1:n);
+H=-Khat(:,n+1:end); % ricordarsi il meno
+
+sys1=feedback(Pd,-K);
+s=tf('s');
+Cint=c2d(1/s,Tc)*H
+sys2=feedback([0 1 0 0]*sys1*Cint,1)

@@ -2,17 +2,21 @@ clear all;
 clc;
 close all;
 
-st=1e-3;
+st=1e-3; % sample period
 system=ElasticTransmission(st);
 system.show;
 
-st=system.getSamplingPeriod;
+% manager della simulazione
 cs=ControlledSystem(system);
 
+% coppia massima attuatore
 umax=system.getUMax;
+
 t=(0:st:10)';
 
+% massima coppia per 10 secondi
 tau=umax*ones(length(t),1);
+
 output=zeros(length(t),system.getOutputNumber);
 
 % simulo anello aperto
@@ -53,6 +57,8 @@ ctrl=PIController(st,Kp,Ki);
 
 cs.setController(ctrl,1); % il controllore usa solo la prima uscita
 reference=ones(length(tau),1);
+
+
 cs.initialize
 tic
 for it=1:length(t)
