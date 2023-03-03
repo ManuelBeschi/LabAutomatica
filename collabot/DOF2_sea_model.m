@@ -16,7 +16,7 @@ function [A,B,C,D] = DOF2_sea_model(Jm1,Jl1,k1,c1,cm1,Jm2,Jl2,k2,c2,cm2,Ts)
 % Jl*Derivative(link_vel)  = k*(motor_pos-link_pos) + c*(motor_vel-link_vel)
 
 M=[Jm1 0 0 0
-   0 Jl1+Jm2 0 0
+   0 Jl1 0 0
    0 0 Jm2 0;
    0 0 0 Jl2];
 

@@ -1,5 +1,5 @@
 clear all;close all;clc
-load modello_greybox.mat
+load modello_greybox_jnt2.mat
 %%
 torque_to_link=[0 1]*modello_grey;
 

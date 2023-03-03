@@ -1,5 +1,5 @@
 clear all;close all;clc
-load modello_greybox.mat
+load modello_greybox_jnt2.mat
 %%
 full_state=ss(modello_grey.A, ...
     modello_grey.B, ...
@@ -31,10 +31,19 @@ Bhat_d=[Bd;zeros(ni,1)];
 % aval_controllore=exp(Ts*lambda); 
 % Khat=place(Ahat_d,Bhat_d,aval_controllore); % calcola Khat per avere gli autovalori aval_controllore
 %%
-Q=diag([0.01 10 0.001 0.01 10])
-R=1e-4;
-[Khat,S,e] = dlqr(Ahat_d,Bhat_d,Q,R)
+% state2=T*x
+% state2'*Q*state2= x'*T'*Q*T*x
+T=[-1 1 0 0 0;
+0 1 0 0 0;
+0 0 -1 1 0;
+ 0 0 0 1 0;
+0 0 0 0 1];
 
+Q2=diag([1 1 2 0.1 10]);
+Q=T'*Q2*T;
+R=1e-6;
+[Khat,S,e] = dlqr(Ahat_d,Bhat_d,Q,R);
+damp(log(e)/1e-3)
 K=Khat(:,1:n);
 H=-Khat(:,n+1:end); % ricordarsi il meno
 
