@@ -9,9 +9,12 @@ function [A,B,C,D] = sea_model(Jm,Jl,k,c,cm,Ts)
 %
 % x=[motor_pos, link_pos, motor_vel, link_vel]
 %
-% u=motor_eff
+% u=motor_effort
 %
-% Jm*Derivative(motor_vel) = u - cm*motor_vel -k*(motor_pos-link_pos) - c*(motor_vel-link_vel)
+% Derivative(motor_pos)=motor_vel=0*motor_pos+0*link_pos+1*motor_vel+0*link_vel+0*u
+% Derivative(link_pos)=link_vel
+%
+% Jm*Derivative(motor_vel) = 1*u - cm*motor_vel -k*(motor_pos-link_pos) - c*(motor_vel-link_vel)
 %
 % Jl*Derivative(link_vel)  = k*(motor_pos-link_pos) + c*(motor_vel-link_vel)
 

@@ -1,5 +1,5 @@
 function cost=pivel_cost_function(x,P,wc_des)
-% J =(wc-wc_des)^2 = (wc_des-wc)^2
+% cost = J =(wc-wc_des)^2 = (wc_des-wc)^2
 % L=P*C ha modulo pari a 1 (o 0 dB)
 
 % C=(Kp*s+Ki)/s;

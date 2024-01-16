@@ -54,7 +54,11 @@ classdef MechanicalSystem < handle
         % solve derivative(x)=f(x,u) during sampling period
         function obj=updateState(obj,u,t)
             usat=obj.saturationControlAction(u);
-            obj.odeSolver(usat,obj.st,t);
+            n=10;
+            dt=obj.st/n;
+            for idx=1:n
+                obj.odeSolver(usat,dt,t);
+            end
         end
 
 

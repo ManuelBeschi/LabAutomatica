@@ -33,10 +33,13 @@ cs.setController(ctrl);
 % simulo il sistema per la valutazione
 % "fast" fa 5 esecuzioni
 % "complete" le fa 5 x 5 esecuzioni
+
+tic
 [score,results]=cs.evalution("fast");
+computation_time=toc;
+simulated_time=sum([results.Ttot]);
+fprintf('Real-time factor = %f',simulated_time/computation_time)
 
 % grafico i risultati
 fprintf('lo score è %f\n',score);
 cs.showResults(results)
-
-%cs.showResult(results(1))

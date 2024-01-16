@@ -1,0 +1,2 @@
+
+ctrl=FFwController(st,@idynRigid);

@@ -1,13 +1,14 @@
 clear all;close all;clc
 load modello_greybox_jnt2.mat
+test=load('modello_greybox_jnt2_estero.mat')
 %%
 full_state=ss(modello_grey.A, ...
     modello_grey.B, ...
     eye(4), ...
     zeros(4,1));
 
-Jl=modello_grey.Structure.Parameters(2).Value;
-full_state_disturbo_sul_carico=ss(modello_grey.A, ...
+Jl=test.modello_grey.Structure.Parameters(2).Value;
+full_state_disturbo_sul_carico=ss(test.modello_grey.A, ...
     [modello_grey.B [0;0;0;1/Jl]], ...
     eye(4), ...
     zeros(4,2));
@@ -39,9 +40,9 @@ T=[-1 1 0 0 0;
  0 0 0 1 0;
 0 0 0 0 1];
 
-Q2=diag([1 1 2 0.1 10]);
+Q2=diag([1 1 2 1 100]);
 Q=T'*Q2*T;
-R=1e-6;
+R=1e-5;
 [Khat,S,e] = dlqr(Ahat_d,Bhat_d,Q,R);
 damp(log(e)/1e-3)
 K=Khat(:,1:n);
@@ -54,9 +55,15 @@ reference_to_state=feedback(sys1*Cint*[0 1 0 0],eye(4))*[0;1;0;0];
 figure(1)
 step(reference_to_state)
 
-
+return
 %% no integral
-Q=diag([0.01 10 0.001 0.1])
-R=1e-5;
+T=[-1 1 0 0;
+0 1 0 0 ;
+0 0 -1 1;
+ 0 0 0 1;];
+
+Q2=diag([1 10 2 0.]);
+Q=T'*Q2*T;
+R=1e-6;
 [K,S,e] = dlqr(Ad,Bd,Q,R)
 H=0

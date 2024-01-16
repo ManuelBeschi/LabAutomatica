@@ -1,7 +1,7 @@
 clear all;close all;clc
 
 load joint2_collabot_freqident_joint_2_test3.mat
-%load joint2_collabot_freqident_joint_2.mat
+load joint2_collabot_freqident_joint_2_test5_jnt3esteso.mat
 Ts=1e-3;
 
 fr=experiment_freqresp([1:2],1);
